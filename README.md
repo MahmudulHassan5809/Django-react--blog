@@ -9,8 +9,14 @@
     npm install
 
     # Install backend-end dependencies and active virtual env
-    pipend shell
+    pipenv shell
     pipenv install
+
+    # Database Migration (from root)
+    python blog/manage.py migrate
+
+    # Super user Create
+    python blog/manage.py createsuperuser
 
     # Serve API on localhost:8000 (from root)
     python blog/manage.py runserver
