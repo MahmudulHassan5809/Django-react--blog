@@ -1,6 +1,9 @@
 >#### Full stack Django/React/Redux app that uses token based authentication with Knox.
 #
 
+![Demo Image](./intro.png)
+#
+
 #### Quick Start
     # Install front-end dependencies
     npm install
