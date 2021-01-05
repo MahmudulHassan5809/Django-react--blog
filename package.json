@@ -23,7 +23,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-alert": "^7.0.0",
