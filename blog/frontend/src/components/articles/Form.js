@@ -24,7 +24,6 @@ const Form = ({addArticle,getCategories,categories}) => {
     const onChange = (e) => {
         e.preventDefault();
         if (e.target.name == 'image'){
-
             setArticle({
                 ...article,
                 [e.target.name] : e.target.files[0]
@@ -112,6 +111,7 @@ const Form = ({addArticle,getCategories,categories}) => {
                    <div className="form-group">
                         <label htmlFor="category">Category</label>
                         <select className="form-control" name="category" onChange={onChange}>
+                            <option value="" disabled selected>Choose Option</option>
                             {categories.map(cat => (
                                 <option value={cat.id} key={cat.id}>{cat.name}</option>
                             ))
